@@ -107,6 +107,9 @@ COPY --from=builder "${PERLBREW_ROOT}/perls/perl-${PERL_VERSION}" "${PERLBREW_RO
 ENV PATH="${PERL_HOME}/bin:${PATH}"
 ENV PERL5LIB="/app/movabletype/lib:/app/movabletype/extlib:${PERL_HOME}/lib/${PERL_VERSION}"
 
+# Set up directories
+RUN mkdir -p /app/movabletype /app/run
+
 # Copy Procfile
 COPY common/Procfile /etc/proclet/Procfile
 
@@ -115,7 +118,7 @@ COPY common/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Copy application
-COPY app/ /app/
+COPY app/movabletype/ /app/movabletype/
 
 WORKDIR /app/movabletype
 
