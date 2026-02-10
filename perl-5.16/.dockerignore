@@ -1,0 +1,6 @@
+.git
+.claude/
+*.md
+common/local/
+scripts/
+compose.yml

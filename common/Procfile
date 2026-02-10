@@ -1,0 +1,1 @@
+starman: starman --workers 5 --port 5000 --access-log /dev/stderr --error-log /dev/stderr /app/movabletype/mt.psgi

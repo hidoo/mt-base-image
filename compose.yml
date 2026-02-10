@@ -1,0 +1,23 @@
+---
+services:
+  perl-516:
+    build:
+      context: .
+      dockerfile: perl-5.16/Dockerfile
+    image: mt-base-image:perl-5.16
+    ports:
+      - "5016:5000"
+    volumes:
+      - ./app:/app
+    restart: unless-stopped
+
+  perl-532:
+    build:
+      context: .
+      dockerfile: perl-5.32/Dockerfile
+    image: mt-base-image:perl-5.32
+    ports:
+      - "5032:5000"
+    volumes:
+      - ./app:/app
+    restart: unless-stopped

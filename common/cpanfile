@@ -1,0 +1,61 @@
+# requires
+requires 'CGI';
+requires 'CGI::Cookie';
+requires 'Image::Size';
+requires 'File::Spec', '0.8';
+requires 'LWP::UserAgent';
+requires 'Scalar::Util';
+requires 'HTML::Entities', '3.69';
+requires 'parent';
+
+# requires for database
+requires 'DBI', '1.21';
+requires 'DBD::mysql', '== 4.052'; # Last version to support MySQL 5.x
+
+# recommends
+requires 'Digest::SHA';
+requires 'Plack';
+requires 'CGI::PSGI';
+requires 'CGI::Parse::PSGI';
+requires 'File::Temp';
+requires 'List::Util';
+requires 'Imager';
+requires 'Crypt::DSA';
+requires 'Archive::Tar';
+requires 'IO::Compress::Gzip';
+requires 'IO::Uncompress::Gunzip';
+requires 'SOAP::Lite', '0.5';
+requires 'Archive::Zip';
+requires 'XML::SAX';
+requires 'Net::SMTP';
+requires 'IO::Socket::SSL';
+requires 'Net::SSLeay';
+requires 'Safe';
+requires 'Digest::MD5';
+requires 'Text::Balanced';
+requires 'XML::Parser';
+requires 'XML::SAX::ExpatXS';
+requires 'XML::SAX::Expat';
+requires 'XML::LibXML::SAX';
+requires 'Mozilla::CA';
+requires 'Time::HiRes';
+requires 'YAML::Syck';
+requires 'CGI::Compile';
+
+# process management
+requires 'Proclet';
+
+# other
+requires 'Starman';
+requires 'JSON::XS';
+requires 'Hash::Merge';
+requires 'DateTime';
+
+on 'test' => sub {
+    requires 'Module::Pluggable', '>= 5.2';
+    requires 'Perl::Critic';
+    requires 'Perl::Tidy';
+
+    # for Perl-Debug in vscode
+    requires 'PadWalker';
+};
