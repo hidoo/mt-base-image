@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(docker push:*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": false,
+    "allowUnsandboxedCommands": false
+  }
+}
