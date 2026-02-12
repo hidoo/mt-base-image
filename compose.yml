@@ -8,7 +8,7 @@ services:
     ports:
       - "5016:5000"
     volumes:
-      - ./app:/app
+      - ./app/movabletype:/app/movabletype
     restart: unless-stopped
 
   perl-532:
@@ -19,5 +19,5 @@ services:
     ports:
       - "5032:5000"
     volumes:
-      - ./app:/app
+      - ./app/movabletype:/app/movabletype
     restart: unless-stopped
