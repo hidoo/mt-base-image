@@ -84,6 +84,14 @@ curl http://localhost:5016/
 curl http://localhost:5032/
 ```
 
+### ビルド後検証
+
+lint、ビルド、コンテナ起動、HTTP レスポンス、モジュール読み込み、プロセス数を一括で検証します。
+
+```bash
+./scripts/verify.sh
+```
+
 ## プロジェクト構成
 
 ```
@@ -103,7 +111,8 @@ project-root/
 │   └── mt.psgi              # PSGI エントリポイント
 ├── scripts/
 │   ├── build-all.sh         # 両バージョンビルドスクリプト
-│   └── generate-snapshot.sh # cpanfile.snapshot 生成
+│   ├── generate-snapshot.sh # cpanfile.snapshot 生成
+│   └── verify.sh            # ビルド後検証スクリプト
 ├── compose.yml
 └── README.md
 ```

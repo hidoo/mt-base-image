@@ -35,7 +35,8 @@ project-root/
 │   └── mt.psgi              # PSGI エントリポイント
 ├── scripts/
 │   ├── build-all.sh         # 両バージョンビルドスクリプト
-│   └── generate-snapshot.sh # cpanfile.snapshot 生成
+│   ├── generate-snapshot.sh # cpanfile.snapshot 生成
+│   └── verify.sh            # ビルド後検証スクリプト
 ├── compose.yml
 └── README.md
 ```
