@@ -1,5 +1,12 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
+  Algorithm-Diff-1.201
+    pathname: R/RJ/RJBS/Algorithm-Diff-1.201.tar.gz
+    provides:
+      Algorithm::Diff 1.201
+      Algorithm::Diff::_impl 1.201
+    requirements:
+      ExtUtils::MakeMaker 0
   Alien-Build-2.84
     pathname: P/PL/PLICEASE/Alien-Build-2.84.tar.gz
     provides:
@@ -136,6 +143,58 @@ DISTRIBUTIONS
       POSIX::strftime::Compiler 0.30
       Time::Local 0
       perl 5.008001
+  App-perlimports-0.000058
+    pathname: O/OA/OALDERS/App-perlimports-0.000058.tar.gz
+    provides:
+      App::perlimports 0.000058
+      App::perlimports::Annotations 0.000058
+      App::perlimports::CLI 0.000058
+      App::perlimports::Config 0.000058
+      App::perlimports::Document 0.000058
+      App::perlimports::ExportInspector 0.000058
+      App::perlimports::Include 0.000058
+      App::perlimports::Role::Logger 0.000058
+      App::perlimports::Sandbox 0.000058
+    requirements:
+      Capture::Tiny 0
+      Class::Inspector 1.36
+      Cpanel::JSON::XS 0
+      Data::Dumper 0
+      Data::UUID 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::XDG 1.01
+      Getopt::Long::Descriptive 0
+      List::Util 0
+      Log::Dispatch 2.70
+      Memoize 0
+      Module::Runtime 0
+      Moo 0
+      Moo::Role 0
+      MooX::StrictConstructor 0
+      PPI 1.276
+      PPI::Document 0
+      PPIx::Utils::Classification 0
+      Path::Iterator::Rule 0
+      Path::Tiny 0
+      Perl::Tidy 20220613
+      Pod::Usage 0
+      Ref::Util 0
+      Scalar::Util 0
+      Sereal::Decoder 0
+      Sereal::Encoder 0
+      Sub::HandlesVia 0
+      Symbol::Get 0.10
+      TOML::Tiny 0.16
+      Text::Diff 0
+      Text::SimpleTable::AutoWidth 0
+      Try::Tiny 0
+      Types::Standard 0
+      feature 0
+      perl v5.18.0
+      strict 0
+      utf8 0
+      warnings 0
   Archive-Zip-1.68
     pathname: P/PH/PHRED/Archive-Zip-1.68.tar.gz
     provides:
@@ -249,6 +308,13 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 6.42
       Test::More 0.88
       perl 5.008001
+  Call-Context-0.05
+    pathname: F/FE/FELIPE/Call-Context-0.05.tar.gz
+    provides:
+      Call::Context 0.05
+      Call::Context::X 0.05
+    requirements:
+      ExtUtils::MakeMaker 0
   Canary-Stability-2013
     pathname: M/ML/MLEHMANN/Canary-Stability-2013.tar.gz
     provides:
@@ -299,6 +365,19 @@ DISTRIBUTIONS
       File::Spec 0.80
       base 0
       perl 5.008
+  Class-Method-Modifiers-2.15
+    pathname: E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz
+    provides:
+      Class::Method::Modifiers 2.15
+    requirements:
+      B 0
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      base 0
+      perl 5.006
+      strict 0
+      warnings 0
   Class-Singleton-1.6
     pathname: S/SH/SHAY/Class-Singleton-1.6.tar.gz
     provides:
@@ -702,6 +781,25 @@ DISTRIBUTIONS
       Symbol 0
       Test 0
       perl 5.006
+  Data-OptList-0.114
+    pathname: R/RJ/RJBS/Data-OptList-0.114.tar.gz
+    provides:
+      Data::OptList 0.114
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      List::Util 0
+      Params::Util 0
+      Sub::Install 0.921
+      perl 5.012
+      strict 0
+      warnings 0
+  Data-UUID-1.227
+    pathname: G/GT/GTERMARS/Data-UUID-1.227.tar.gz
+    provides:
+      Data::UUID 1.227
+    requirements:
+      Digest::MD5 0
+      ExtUtils::MakeMaker 0
   Data-Validator-1.07
     pathname: G/GF/GFUJI/Data-Validator-1.07.tar.gz
     provides:
@@ -1156,6 +1254,14 @@ DISTRIBUTIONS
       File::Spec 0
       File::Temp 0.16
       perl 5.00405
+  Devel-GlobalDestruction-0.14
+    pathname: H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz
+    provides:
+      Devel::GlobalDestruction 0.14
+    requirements:
+      ExtUtils::MakeMaker 0
+      Sub::Exporter::Progressive 0.001011
+      perl 5.006
   Devel-PPPort-3.68
     pathname: A/AT/ATOOMIC/Devel-PPPort-3.68.tar.gz
     provides:
@@ -1338,6 +1444,16 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       base 0
       perl 5.006
+  File-XDG-1.03
+    pathname: P/PL/PLICEASE/File-XDG-1.03.tar.gz
+    provides:
+      File::XDG 1.03
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Path 2.07
+      Path::Tiny 0
+      Ref::Util 0
+      perl 5.006
   File-chdir-0.1011
     pathname: D/DA/DAGOLDEN/File-chdir-0.1011.tar.gz
     provides:
@@ -1391,6 +1507,34 @@ DISTRIBUTIONS
       Test::Requires 0
       Text::Table 0
       perl 5.008001
+  Getopt-Long-2.58
+    pathname: J/JV/JV/Getopt-Long-2.58.tar.gz
+    provides:
+      Getopt::Long 2.58
+      Getopt::Long::Parser 2.58
+    requirements:
+      ExtUtils::MakeMaker 0
+      Pod::Usage 1.14
+  Getopt-Long-Descriptive-0.116
+    pathname: R/RJ/RJBS/Getopt-Long-Descriptive-0.116.tar.gz
+    provides:
+      Getopt::Long::Descriptive 0.116
+      Getopt::Long::Descriptive::Opts 0.116
+      Getopt::Long::Descriptive::Usage 0.116
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      File::Basename 0
+      Getopt::Long 2.55
+      List::Util 0
+      Params::Validate 0.97
+      Scalar::Util 0
+      Sub::Exporter 0.972
+      Sub::Exporter::Util 0
+      overload 0
+      perl 5.012
+      strict 0
+      warnings 0
   HTML-Parser-3.83
     pathname: O/OA/OALDERS/HTML-Parser-3.83.tar.gz
     provides:
@@ -1749,6 +1893,53 @@ DISTRIBUTIONS
       XSLoader 0
       strict 0
       warnings 0
+  Log-Dispatch-2.71
+    pathname: D/DR/DROLSKY/Log-Dispatch-2.71.tar.gz
+    provides:
+      Log::Dispatch 2.71
+      Log::Dispatch::ApacheLog 2.71
+      Log::Dispatch::Base 2.71
+      Log::Dispatch::Code 2.71
+      Log::Dispatch::Email 2.71
+      Log::Dispatch::Email::MIMELite 2.71
+      Log::Dispatch::Email::MailSend 2.71
+      Log::Dispatch::Email::MailSender 2.71
+      Log::Dispatch::Email::MailSendmail 2.71
+      Log::Dispatch::File 2.71
+      Log::Dispatch::File::Locked 2.71
+      Log::Dispatch::Handle 2.71
+      Log::Dispatch::Null 2.71
+      Log::Dispatch::Output 2.71
+      Log::Dispatch::Screen 2.71
+      Log::Dispatch::Syslog 2.71
+      Log::Dispatch::Types 2.71
+      Log::Dispatch::Vars 2.71
+    requirements:
+      Carp 0
+      Devel::GlobalDestruction 0
+      Dist::CheckConflicts 0.02
+      Encode 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      IO::Handle 0
+      Module::Runtime 0
+      Params::ValidationCompiler 0
+      Scalar::Util 0
+      Specio 0.32
+      Specio::Declare 0
+      Specio::Exporter 0
+      Specio::Library::Builtins 0
+      Specio::Library::Numeric 0
+      Specio::Library::String 0
+      Sys::Syslog 0.28
+      Try::Tiny 0
+      base 0
+      namespace::autoclean 0
+      parent 0
+      perl 5.006
+      strict 0
+      warnings 0
   Log-Minimal-0.19
     pathname: K/KA/KAZEBURO/Log-Minimal-0.19.tar.gz
     provides:
@@ -1896,6 +2087,46 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.006000
+  Moo-2.005005
+    pathname: H/HA/HAARG/Moo-2.005005.tar.gz
+    provides:
+      Method::Generate::Accessor undef
+      Method::Generate::BuildAll undef
+      Method::Generate::Constructor undef
+      Method::Generate::DemolishAll undef
+      Moo 2.005005
+      Moo::HandleMoose undef
+      Moo::HandleMoose::FakeConstructor undef
+      Moo::HandleMoose::FakeMetaClass undef
+      Moo::HandleMoose::_TypeMap undef
+      Moo::Object undef
+      Moo::Role 2.005005
+      Moo::_Utils undef
+      Moo::sification undef
+      oo undef
+    requirements:
+      Carp 0
+      Class::Method::Modifiers 1.10
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Role::Tiny 2.002003
+      Scalar::Util 1.00
+      Sub::Defer 2.006006
+      Sub::Quote 2.006006
+      perl 5.006
+  MooX-StrictConstructor-0.013
+    pathname: H/HA/HAARG/MooX-StrictConstructor-0.013.tar.gz
+    provides:
+      MooX::StrictConstructor 0.013
+      MooX::StrictConstructor::Role::BuildAll 0.013
+      MooX::StrictConstructor::Role::Constructor 0.013
+      MooX::StrictConstructor::Role::Constructor::Base 0.013
+      MooX::StrictConstructor::Role::Constructor::Late 0.013
+    requirements:
+      ExtUtils::MakeMaker 0
+      Moo 2.004000
+      Moo::Role 0
+      perl 5.008
   Mouse-v2.6.1
     pathname: S/SK/SKAJI/Mouse-v2.6.1.tar.gz
     provides:
@@ -2007,6 +2238,13 @@ DISTRIBUTIONS
       POSIX 0
       Socket 0
       Time::HiRes 0
+  Number-Compare-0.03
+    pathname: R/RC/RCLAMP/Number-Compare-0.03.tar.gz
+    provides:
+      Number::Compare 0.03
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
   POSIX-strftime-Compiler-0.46
     pathname: K/KA/KAZEBURO/POSIX-strftime-Compiler-0.46.tar.gz
     provides:
@@ -2298,13 +2536,6 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
-  PadWalker-2.5
-    pathname: R/RO/ROBIN/PadWalker-2.5.tar.gz
-    provides:
-      PadWalker 2.5
-    requirements:
-      ExtUtils::MakeMaker 0
-      perl 5.008001
   Parallel-Prefork-0.18
     pathname: K/KA/KAZUHO/Parallel-Prefork-0.18.tar.gz
     provides:
@@ -2337,6 +2568,25 @@ DISTRIBUTIONS
       Scalar::Util 1.18
       XSLoader 0.22
       parent 0
+  Params-Validate-1.31
+    pathname: D/DR/DROLSKY/Params-Validate-1.31.tar.gz
+    provides:
+      Params::Validate 1.31
+      Params::Validate::Constants 1.31
+      Params::Validate::PP 1.31
+      Params::Validate::XS 1.31
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::CBuilder 0
+      Module::Build 0.4227
+      Module::Implementation 0
+      Scalar::Util 1.10
+      XSLoader 0
+      perl 5.008001
+      strict 0
+      vars 0
+      warnings 0
   Params-ValidationCompiler-0.31
     pathname: D/DR/DROLSKY/Params-ValidationCompiler-0.31.tar.gz
     provides:
@@ -2355,6 +2605,26 @@ DISTRIBUTIONS
       overload 0
       strict 0
       warnings 0
+  Path-Iterator-Rule-1.015
+    pathname: D/DA/DAGOLDEN/Path-Iterator-Rule-1.015.tar.gz
+    provides:
+      PIR 1.015
+      Path::Iterator::Rule 1.015
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.17
+      File::Basename 0
+      File::Spec 0
+      List::Util 0
+      Number::Compare 0.02
+      Scalar::Util 0
+      Text::Glob 0
+      Try::Tiny 0
+      if 0
+      perl 5.008001
+      strict 0
+      warnings 0
+      warnings::register 0
   Path-Tiny-0.150
     pathname: D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz
     provides:
@@ -2834,6 +3104,35 @@ DISTRIBUTIONS
     requirements:
       Module::Build::Tiny 0.035
       perl 5.005
+  Ref-Util-0.204
+    pathname: A/AR/ARC/Ref-Util-0.204.tar.gz
+    provides:
+      Ref::Util 0.204
+      Ref::Util::PP 0.204
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Ref::Util::XS 0
+      Text::ParseWords 0
+      perl 5.006
+  Ref-Util-XS-0.117
+    pathname: X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz
+    provides:
+      Ref::Util::XS 0.117
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      XSLoader 0
+      perl 5.006
+  Role-Hooks-0.008
+    pathname: T/TO/TOBYINK/Role-Hooks-0.008.tar.gz
+    provides:
+      Role::Hooks 0.008
+    requirements:
+      Class::Method::Modifiers 0
+      ExtUtils::MakeMaker 6.17
+      List::Util 1.45
+      perl 5.008001
   Role-Tiny-2.002004
     pathname: H/HA/HAARG/Role-Tiny-2.002004.tar.gz
     provides:
@@ -2948,6 +3247,51 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::More 0
       perl 5.006001
+  Sereal-Decoder-5.004
+    pathname: Y/YV/YVES/Sereal-Decoder-5.004.tar.gz
+    provides:
+      Sereal::Decoder 5.004
+      Sereal::Decoder::Constants 5.004
+      Sereal::Performance undef
+    requirements:
+      Data::Dumper 0
+      Devel::CheckLib 1.16
+      ExtUtils::MakeMaker 7.0
+      ExtUtils::ParseXS 2.21
+      File::Find 0
+      File::Path 0
+      File::Spec 0
+      Scalar::Util 0
+      Test::Deep 0
+      Test::Differences 0
+      Test::LongString 0
+      Test::More 0.88
+      Test::Warn 0
+      XSLoader 0
+      perl 5.008
+  Sereal-Encoder-5.004
+    pathname: Y/YV/YVES/Sereal-Encoder-5.004.tar.gz
+    provides:
+      Sereal::Encoder 5.004
+      Sereal::Encoder::Constants 5.004
+    requirements:
+      Data::Dumper 0
+      Devel::CheckLib 1.16
+      ExtUtils::MakeMaker 7.0
+      ExtUtils::ParseXS 2.21
+      File::Find 0
+      File::Path 0
+      File::Spec 0
+      Hash::Util 0
+      Scalar::Util 0
+      Sereal::Decoder 5.004
+      Test::Deep 0
+      Test::Differences 0
+      Test::LongString 0
+      Test::More 0.88
+      Test::Warn 0
+      XSLoader 0
+      perl 5.008
   Set-Crontab-1.03
     pathname: A/AM/AMS/Set-Crontab-1.03.tar.gz
     provides:
@@ -3081,12 +3425,79 @@ DISTRIBUTIONS
       String::ShellQuote 1.04
     requirements:
       ExtUtils::MakeMaker 0
+  Sub-Exporter-0.991
+    pathname: R/RJ/RJBS/Sub-Exporter-0.991.tar.gz
+    provides:
+      Sub::Exporter 0.991
+      Sub::Exporter::Util 0.991
+    requirements:
+      Carp 0
+      Data::OptList 0.100
+      ExtUtils::MakeMaker 6.78
+      Params::Util 0.14
+      Sub::Install 0.92
+      perl 5.012
+      strict 0
+      warnings 0
   Sub-Exporter-Progressive-0.001013
     pathname: F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
     provides:
       Sub::Exporter::Progressive 0.001013
     requirements:
       ExtUtils::MakeMaker 0
+  Sub-HandlesVia-0.053005
+    pathname: T/TO/TOBYINK/Sub-HandlesVia-0.053005.tar.gz
+    provides:
+      Sub::HandlesVia 0.053005
+      Sub::HandlesVia::CodeGenerator 0.053005
+      Sub::HandlesVia::Declare 0.053005
+      Sub::HandlesVia::Handler 0.053005
+      Sub::HandlesVia::Handler::CodeRef 0.053005
+      Sub::HandlesVia::Handler::Traditional 0.053005
+      Sub::HandlesVia::HandlerLibrary 0.053005
+      Sub::HandlesVia::HandlerLibrary::Array 0.053005
+      Sub::HandlesVia::HandlerLibrary::Blessed 0.053005
+      Sub::HandlesVia::HandlerLibrary::Bool 0.053005
+      Sub::HandlesVia::HandlerLibrary::Code 0.053005
+      Sub::HandlesVia::HandlerLibrary::Counter 0.053005
+      Sub::HandlesVia::HandlerLibrary::Enum 0.053005
+      Sub::HandlesVia::HandlerLibrary::Hash 0.053005
+      Sub::HandlesVia::HandlerLibrary::Number 0.053005
+      Sub::HandlesVia::HandlerLibrary::Scalar 0.053005
+      Sub::HandlesVia::HandlerLibrary::String 0.053005
+      Sub::HandlesVia::Mite undef
+      Sub::HandlesVia::Toolkit 0.053005
+      Sub::HandlesVia::Toolkit::Mite 0.053005
+      Sub::HandlesVia::Toolkit::Moo 0.053005
+      Sub::HandlesVia::Toolkit::Moose 0.053005
+      Sub::HandlesVia::Toolkit::Moose::PackageTrait 0.053005
+      Sub::HandlesVia::Toolkit::Moose::RoleTrait 0.053005
+      Sub::HandlesVia::Toolkit::Mouse 0.053005
+      Sub::HandlesVia::Toolkit::Mouse::PackageTrait 0.053005
+      Sub::HandlesVia::Toolkit::Mouse::RoleTrait 0.053005
+      Sub::HandlesVia::Toolkit::ObjectPad 0.053005
+      Sub::HandlesVia::Toolkit::Plain 0.053005
+    requirements:
+      Class::Method::Modifiers 0
+      Exporter::Shiny 0
+      ExtUtils::MakeMaker 6.17
+      List::Util 1.54
+      Role::Hooks 0.008
+      Role::Tiny 0
+      Type::Tiny 1.004
+      perl 5.008001
+  Sub-Install-0.929
+    pathname: R/RJ/RJBS/Sub-Install-0.929.tar.gz
+    provides:
+      Sub::Install 0.929
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      Scalar::Util 0
+      perl 5.008000
+      strict 0
+      warnings 0
   Sub-Name-0.28
     pathname: E/ET/ETHER/Sub-Name-0.28.tar.gz
     provides:
@@ -3107,6 +3518,41 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Scalar::Util 0
       perl 5.006
+  Sub-Uplevel-0.2800
+    pathname: D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
+    provides:
+      Sub::Uplevel 0.2800
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.17
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Symbol-Get-0.12
+    pathname: F/FE/FELIPE/Symbol-Get-0.12.tar.gz
+    provides:
+      Symbol::Get 0.12
+    requirements:
+      Call::Context 0
+      ExtUtils::MakeMaker 0
+  TOML-Tiny-0.20
+    pathname: O/OA/OALDERS/TOML-Tiny-0.20.tar.gz
+    provides:
+      TOML::Tiny 0.20
+      TOML::Tiny::Grammar 0.20
+      TOML::Tiny::Parser 0.20
+      TOML::Tiny::Tokenizer 0.20
+      TOML::Tiny::Util 0.20
+      TOML::Tiny::Writer 0.20
+    requirements:
+      Carp 0
+      Data::Dumper 0
+      Encode 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Math::BigInt 1.999718
+      perl 5.018
   Task-Weaken-1.06
     pathname: E/ET/ETHER/Task-Weaken-1.06.tar.gz
     provides:
@@ -3179,6 +3625,16 @@ DISTRIBUTIONS
       Test::Builder 0
       Test::More 0.96
       perl 5.012
+  Test-Differences-0.72
+    pathname: D/DC/DCANTRELL/Test-Differences-0.72.tar.gz
+    provides:
+      Test::Differences 0.72
+    requirements:
+      Capture::Tiny 0.24
+      Data::Dumper 2.126
+      ExtUtils::MakeMaker 0
+      Test::More 0.88
+      Text::Diff 1.43
   Test-Fatal-0.018
     pathname: R/RJ/RJBS/Test-Fatal-0.018.tar.gz
     provides:
@@ -3191,6 +3647,14 @@ DISTRIBUTIONS
       Try::Tiny 0.07
       perl 5.012
       warnings 0
+  Test-LongString-0.17
+    pathname: R/RG/RGARCIA/Test-LongString-0.17.tar.gz
+    provides:
+      Test::LongString 0.17
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::Builder 0.12
+      Test::Builder::Tester 1.04
   Test-Output-1.036
     pathname: B/BR/BRIANDFOY/Test-Output-1.036.tar.gz
     provides:
@@ -3238,6 +3702,17 @@ DISTRIBUTIONS
       Test::SharedFork 0.29
       Time::HiRes 0
       perl 5.008001
+  Test-Warn-0.37
+    pathname: B/BI/BIGJ/Test-Warn-0.37.tar.gz
+    provides:
+      Test::Warn 0.37
+    requirements:
+      Carp 1.22
+      ExtUtils::MakeMaker 0
+      Sub::Uplevel 0.12
+      Test::Builder 0.13
+      Test::Builder::Tester 1.02
+      perl 5.006
   Text-Aligner-0.16
     pathname: S/SH/SHLOMIF/Text-Aligner-0.16.tar.gz
     provides:
@@ -3252,6 +3727,46 @@ DISTRIBUTIONS
       perl 5.008
       strict 0
       vars 0
+      warnings 0
+  Text-Diff-1.45
+    pathname: N/NE/NEILB/Text-Diff-1.45.tar.gz
+    provides:
+      Text::Diff 1.45
+      Text::Diff::Base 1.45
+      Text::Diff::Config 1.44
+      Text::Diff::Table 1.44
+    requirements:
+      Algorithm::Diff 1.19
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+  Text-Glob-0.11
+    pathname: R/RC/RCLAMP/Text-Glob-0.11.tar.gz
+    provides:
+      Text::Glob 0.11
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      constant 0
+      perl 5.00503
+  Text-SimpleTable-2.07
+    pathname: M/MR/MRAMBERG/Text-SimpleTable-2.07.tar.gz
+    provides:
+      Text::SimpleTable 2.07
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      perl 5.008001
+  Text-SimpleTable-AutoWidth-0.09
+    pathname: C/CU/CUB/Text-SimpleTable-AutoWidth-0.09.tar.gz
+    provides:
+      Text::SimpleTable::AutoWidth 0.09
+    requirements:
+      ExtUtils::MakeMaker 0
+      List::Util 0
+      Moo 0
+      Text::SimpleTable 0
+      strict 0
       warnings 0
   Text-Table-1.135
     pathname: S/SH/SHLOMIF/Text-Table-1.135.tar.gz
@@ -3333,6 +3848,64 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  Type-Tiny-2.010001
+    pathname: T/TO/TOBYINK/Type-Tiny-2.010001.tar.gz
+    provides:
+      Devel::TypeTiny::Perl58Compat 2.010001
+      Error::TypeTiny 2.010001
+      Error::TypeTiny::Assertion 2.010001
+      Error::TypeTiny::Compilation 2.010001
+      Error::TypeTiny::WrongNumberOfParameters 2.010001
+      Eval::TypeTiny 2.010001
+      Eval::TypeTiny::CodeAccumulator 2.010001
+      Reply::Plugin::TypeTiny 2.010001
+      Test::TypeTiny 2.010001
+      Type::Coercion 2.010001
+      Type::Coercion::FromMoose 2.010001
+      Type::Coercion::Union 2.010001
+      Type::Library 2.010001
+      Type::Params 2.010001
+      Type::Params::Alternatives 2.010001
+      Type::Params::Parameter 2.010001
+      Type::Params::Signature 2.010001
+      Type::Parser 2.010001
+      Type::Parser::AstBuilder 2.010001
+      Type::Parser::Token 2.010001
+      Type::Parser::TokenStream 2.010001
+      Type::Registry 2.010001
+      Type::Tie 2.010001
+      Type::Tie::ARRAY 2.010001
+      Type::Tie::BASE 2.010001
+      Type::Tie::HASH 2.010001
+      Type::Tie::SCALAR 2.010001
+      Type::Tiny 2.010001
+      Type::Tiny::Bitfield 2.010001
+      Type::Tiny::Class 2.010001
+      Type::Tiny::ConstrainedObject 2.010001
+      Type::Tiny::Duck 2.010001
+      Type::Tiny::Enum 2.010001
+      Type::Tiny::Intersection 2.010001
+      Type::Tiny::Role 2.010001
+      Type::Tiny::Union 2.010001
+      Type::Utils 2.010001
+      Types::Common 2.010001
+      Types::Common::Numeric 2.010001
+      Types::Common::String 2.010001
+      Types::Standard 2.010001
+      Types::Standard::ArrayRef 2.010001
+      Types::Standard::CycleTuple 2.010001
+      Types::Standard::Dict 2.010001
+      Types::Standard::HashRef 2.010001
+      Types::Standard::Map 2.010001
+      Types::Standard::ScalarRef 2.010001
+      Types::Standard::StrMatch 2.010001
+      Types::Standard::Tied 2.010001
+      Types::Standard::Tuple 2.010001
+      Types::TypeTiny 2.010001
+    requirements:
+      Exporter::Tiny 1.006000
+      ExtUtils::MakeMaker 6.17
+      perl 5.008001
   Types-Serialiser-1.01
     pathname: M/ML/MLEHMANN/Types-Serialiser-1.01.tar.gz
     provides:

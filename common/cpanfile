@@ -56,6 +56,7 @@ on 'test' => sub {
     requires 'Perl::Critic';
     requires 'Perl::Tidy';
 
-    # for Perl-Debug in vscode
-    requires 'PadWalker';
+    # perlimports
+    requires 'Getopt::Long', '>= 2.55' if $] >= 5.018;
+    requires 'App::perlimports' if $] >= 5.018;
 };

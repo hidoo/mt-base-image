@@ -105,7 +105,7 @@ COPY --from=builder "${PERLBREW_ROOT}/perls/perl-${PERL_VERSION}" "${PERLBREW_RO
 
 # Set up PATH
 ENV PATH="${PERL_HOME}/bin:${PATH}"
-ENV PERL5LIB="/app/movabletype/lib:/app/movabletype/extlib:${PERL_HOME}/lib/${PERL_VERSION}"
+ENV PERL5LIB="/app/movabletype/lib:/app/movabletype/extlib:${PERL_HOME}/lib/site_perl/${PERL_VERSION}:${PERL_HOME}/lib/${PERL_VERSION}"
 
 # Set up directories
 RUN mkdir -p /app/movabletype /app/run
