@@ -1,5 +1,9 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(hadolint:*)",
+      "Bash(shellcheck:*)"
+    ],
     "deny": [
       "Bash(docker push:*)"
     ]
