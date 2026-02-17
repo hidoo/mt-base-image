@@ -84,12 +84,12 @@ curl http://localhost:5016/
 curl http://localhost:5032/
 ```
 
-### ビルド後検証
+### 開発用一括チェック
 
 lint、ビルド、コンテナ起動、HTTP レスポンス、モジュール読み込み、プロセス数を一括で検証します。
 
 ```bash
-./scripts/verify.sh
+./scripts/dev.sh
 ```
 
 ## プロジェクト構成
@@ -110,9 +110,10 @@ project-root/
 ├── app/movabletype/
 │   └── mt.psgi              # PSGI エントリポイント
 ├── scripts/
+│   ├── config.sh            # 共通設定 (IMAGE_NAME, PERL_VERSIONS)
 │   ├── build-all.sh         # 両バージョンビルドスクリプト
 │   ├── generate-snapshot.sh # cpanfile.snapshot 生成
-│   └── verify.sh            # ビルド後検証スクリプト
+│   └── dev.sh               # 開発用メインスクリプト (lint・ビルド・検証)
 ├── compose.yml
 └── README.md
 ```

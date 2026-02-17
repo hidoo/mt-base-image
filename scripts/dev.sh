@@ -4,8 +4,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
-IMAGE_NAME="${IMAGE_NAME:-mt-base-image}"
-PERL_VERSIONS=("5.16" "5.32")
+# shellcheck source=config.sh disable=SC1091
+source "${SCRIPT_DIR}/config.sh"
 HEALTHCHECK_TIMEOUT=60
 FAILURES=0
 
@@ -84,7 +84,8 @@ wait_for_port() {
 }
 
 echo "Waiting for containers to become healthy (max ${HEALTHCHECK_TIMEOUT}s)..."
-for port in 5016 5032; do
+for version in "${PERL_VERSIONS[@]}"; do
+    port="50${version#*.}"
     if ! wait_for_port "${port}"; then
         docker compose -f "${PROJECT_ROOT}/compose.yml" logs 2>&1 | tail -20
         fail "localhost:${port} did not become reachable within ${HEALTHCHECK_TIMEOUT}s"
@@ -108,8 +109,11 @@ verify_response() {
     fi
 }
 
-verify_response 5016 "Perl 5.016"
-verify_response 5032 "Perl 5.032"
+for version in "${PERL_VERSIONS[@]}"; do
+    port="50${version#*.}"
+    expected="Perl 5.0${version#*.}"
+    verify_response "${port}" "${expected}"
+done
 
 # --------------------------------------------------
 # 5. Module loading verification
@@ -144,8 +148,10 @@ verify_workers() {
     fi
 }
 
-verify_workers perl-516
-verify_workers perl-532
+for version in "${PERL_VERSIONS[@]}"; do
+    service="perl-${version//./}"
+    verify_workers "${service}"
+done
 
 # --------------------------------------------------
 # 7. Cleanup is handled by the EXIT trap
@@ -156,9 +162,9 @@ verify_workers perl-532
 # --------------------------------------------------
 echo ""
 if [ "${FAILURES}" -eq 0 ]; then
-    echo "=== All verification steps PASSED ==="
+    echo "=== All checks PASSED ==="
     exit 0
 else
-    echo "=== ${FAILURES} verification step(s) FAILED ===" >&2
+    echo "=== ${FAILURES} check(s) FAILED ===" >&2
     exit 1
 fi

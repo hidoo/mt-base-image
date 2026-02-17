@@ -34,9 +34,10 @@ project-root/
 ├── app/movabletype/
 │   └── mt.psgi              # PSGI エントリポイント
 ├── scripts/
+│   ├── config.sh            # 共通設定 (IMAGE_NAME, PERL_VERSIONS)
 │   ├── build-all.sh         # 両バージョンビルドスクリプト
 │   ├── generate-snapshot.sh # cpanfile.snapshot 生成
-│   └── verify.sh            # ビルド後検証スクリプト
+│   └── dev.sh               # 開発用メインスクリプト (lint・ビルド・検証)
 ├── compose.yml
 └── README.md
 ```

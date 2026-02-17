@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Configurable variables
-IMAGE_NAME="${IMAGE_NAME:-mt-base-image}"
-PERL_VERSIONS=("5.16" "5.32")
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+# shellcheck source=config.sh disable=SC1091
+source "${SCRIPT_DIR}/config.sh"
 
 for version in "${PERL_VERSIONS[@]}"; do
     full_image="${IMAGE_NAME}:perl-${version}"
