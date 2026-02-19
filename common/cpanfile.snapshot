@@ -195,21 +195,21 @@ DISTRIBUTIONS
       strict 0
       utf8 0
       warnings 0
-  Archive-Zip-1.68
-    pathname: P/PH/PHRED/Archive-Zip-1.68.tar.gz
+  Archive-Zip-1.65
+    pathname: P/PH/PHRED/Archive-Zip-1.65.tar.gz
     provides:
-      Archive::Zip 1.68
-      Archive::Zip::Archive 1.68
-      Archive::Zip::BufferedFileHandle 1.68
-      Archive::Zip::DirectoryMember 1.68
-      Archive::Zip::FileMember 1.68
-      Archive::Zip::Member 1.68
-      Archive::Zip::MemberRead 1.68
-      Archive::Zip::MockFileHandle 1.68
-      Archive::Zip::NewFileMember 1.68
-      Archive::Zip::StringMember 1.68
-      Archive::Zip::Tree 1.68
-      Archive::Zip::ZipFileMember 1.68
+      Archive::Zip 1.65
+      Archive::Zip::Archive 1.65
+      Archive::Zip::BufferedFileHandle 1.65
+      Archive::Zip::DirectoryMember 1.65
+      Archive::Zip::FileMember 1.65
+      Archive::Zip::Member 1.65
+      Archive::Zip::MemberRead 1.65
+      Archive::Zip::MockFileHandle 1.65
+      Archive::Zip::NewFileMember 1.65
+      Archive::Zip::StringMember 1.65
+      Archive::Zip::Tree 1.65
+      Archive::Zip::ZipFileMember 1.65
     requirements:
       Compress::Raw::Zlib 2.017
       Encode 0
@@ -225,6 +225,27 @@ DISTRIBUTIONS
       IO::Seekable 0
       Time::Local 0
       perl 5.006
+  Authen-SASL-2.2000
+    pathname: E/EH/EHUELS/Authen-SASL-2.2000.tar.gz
+    provides:
+      Authen::SASL 2.2000
+      Authen::SASL::CRAM_MD5 2.2000
+      Authen::SASL::EXTERNAL 2.2000
+      Authen::SASL::Perl 2.2000
+      Authen::SASL::Perl::ANONYMOUS 2.2000
+      Authen::SASL::Perl::CRAM_MD5 2.2000
+      Authen::SASL::Perl::DIGEST_MD5 2.2000
+      Authen::SASL::Perl::EXTERNAL 2.2000
+      Authen::SASL::Perl::GSSAPI 2.2000
+      Authen::SASL::Perl::LOGIN 2.2000
+      Authen::SASL::Perl::OAUTHBEARER 2.2000
+      Authen::SASL::Perl::PLAIN 2.2000
+      Authen::SASL::Perl::XOAUTH2 2.2000
+    requirements:
+      Crypt::URandom 0
+      Digest::HMAC_MD5 0
+      ExtUtils::MakeMaker 0
+      perl 5.014000
   B-Hooks-EndOfScope-0.28
     pathname: E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
     provides:
@@ -1289,6 +1310,25 @@ DISTRIBUTIONS
     requirements:
       Devel::StackTrace 0
       ExtUtils::MakeMaker 0
+  Digest-HMAC-1.05
+    pathname: A/AR/ARODLAND/Digest-HMAC-1.05.tar.gz
+    provides:
+      Digest::HMAC 1.05
+      Digest::HMAC_MD5 1.05
+      Digest::HMAC_SHA1 1.05
+    requirements:
+      Digest::MD5 2
+      Digest::SHA 1
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  Digest-SHA1-2.13
+    pathname: G/GA/GAAS/Digest-SHA1-2.13.tar.gz
+    provides:
+      Digest::SHA1 2.13
+    requirements:
+      Digest::base 1.00
+      ExtUtils::MakeMaker 0
+      perl 5.004
   Dist-CheckConflicts-0.11
     pathname: D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
     provides:
@@ -1299,6 +1339,106 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 6.30
       Module::Runtime 0.009
       base 0
+      strict 0
+      warnings 0
+  Email-Address-XS-1.05
+    pathname: P/PA/PALI/Email-Address-XS-1.05.tar.gz
+    provides:
+      Email::Address::XS 1.05
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      XSLoader 0
+      base 0
+      overload 0
+      perl 5.006000
+      strict 0
+      warnings 0
+  Email-Date-Format-1.008
+    pathname: R/RJ/RJBS/Email-Date-Format-1.008.tar.gz
+    provides:
+      Email::Date::Format 1.008
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.78
+      Time::Local 1.27
+      perl 5.012
+      warnings 0
+  Email-MIME-1.954
+    pathname: R/RJ/RJBS/Email-MIME-1.954.tar.gz
+    provides:
+      Email::MIME 1.954
+      Email::MIME::Creator 1.954
+      Email::MIME::Encode 1.954
+      Email::MIME::Header 1.954
+      Email::MIME::Header::AddressList 1.954
+      Email::MIME::Modifier 1.954
+    requirements:
+      Carp 0
+      Email::Address::XS 0
+      Email::MIME::ContentType 1.023
+      Email::MIME::Encodings 1.314
+      Email::MessageID 0
+      Email::Simple 2.212
+      Email::Simple::Creator 0
+      Email::Simple::Header 0
+      Encode 1.9801
+      ExtUtils::MakeMaker 6.78
+      MIME::Base64 0
+      MIME::Types 1.13
+      Module::Runtime 0
+      Scalar::Util 0
+      parent 0
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-MIME-ContentType-1.028
+    pathname: R/RJ/RJBS/Email-MIME-ContentType-1.028.tar.gz
+    provides:
+      Email::MIME::ContentType 1.028
+    requirements:
+      Carp 0
+      Encode 2.87
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.78
+      Text::Unidecode 0
+      perl 5.012
+      warnings 0
+  Email-MIME-Encodings-1.317
+    pathname: R/RJ/RJBS/Email-MIME-Encodings-1.317.tar.gz
+    provides:
+      Email::MIME::Encodings 1.317
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      MIME::Base64 3.05
+      MIME::QuotedPrint 3.05
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-MessageID-1.408
+    pathname: R/RJ/RJBS/Email-MessageID-1.408.tar.gz
+    provides:
+      Email::MessageID 1.408
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      Sys::Hostname 0
+      overload 0
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-Simple-2.218
+    pathname: R/RJ/RJBS/Email-Simple-2.218.tar.gz
+    provides:
+      Email::Simple 2.218
+      Email::Simple::Creator 2.218
+      Email::Simple::Header 2.218
+    requirements:
+      Carp 0
+      Email::Date::Format 0
+      ExtUtils::MakeMaker 6.78
+      perl 5.012
       strict 0
       warnings 0
   Encode-Locale-1.05
@@ -1731,6 +1871,20 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Net::SSLeay 1.46
       Scalar::Util 0
+  IPC-Run-20250809.0
+    pathname: N/NJ/NJM/IPC-Run-20250809.0.tar.gz
+    provides:
+      IPC::Run 20250809.0
+      IPC::Run::Debug 20250809.0
+      IPC::Run::IO 20250809.0
+      IPC::Run::Timer 20250809.0
+      IPC::Run::Win32Helper 20250809.0
+      IPC::Run::Win32IO 20250809.0
+      IPC::Run::Win32Process 20250809.0
+      IPC::Run::Win32Pump 20250809.0
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0.47
   IPC-Signal-1.00
     pathname: R/RO/ROSCH/IPC-Signal-1.00.tar.gz
     provides:
@@ -1960,6 +2114,17 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       perl 5.008001
       utf8 0
+  MIME-Types-2.30
+    pathname: M/MA/MARKOV/MIME-Types-2.30.tar.gz
+    provides:
+      MIME::Type 2.30
+      MIME::Types 2.30
+      MojoX::MIME::Types 2.30
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Spec 0
+      List::Util 0
   MRO-Compat-0.15
     pathname: H/HA/HAARG/MRO-Compat-0.15.tar.gz
     provides:
@@ -2171,6 +2336,13 @@ DISTRIBUTIONS
       Mozilla::CA 20250602
     requirements:
       ExtUtils::MakeMaker 0
+  Net-CIDR-0.27
+    pathname: M/MR/MRSAM/Net-CIDR-0.27.tar.gz
+    provides:
+      Net::CIDR 0.27
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
   Net-HTTP-6.24
     pathname: O/OA/OALDERS/Net-HTTP-6.24.tar.gz
     provides:
@@ -2189,6 +2361,33 @@ DISTRIBUTIONS
       perl 5.006002
       strict 0
       warnings 0
+  Net-IP-1.26
+    pathname: M/MA/MANU/Net-IP-1.26.tar.gz
+    provides:
+      Net::IP 1.26
+    requirements:
+      ExtUtils::MakeMaker 0
+  Net-SMTP-SSL-1.04
+    pathname: R/RJ/RJBS/Net-SMTP-SSL-1.04.tar.gz
+    provides:
+      Net::SMTP::SSL 1.04
+    requirements:
+      ExtUtils::MakeMaker 0
+      IO::Socket::SSL 0
+      Net::SMTP 0
+      Test::More 0.47
+  Net-SMTP-TLS-0.12
+    pathname: A/AW/AWESTHOLM/Net-SMTP-TLS-0.12.tar.gz
+    provides:
+      Net::SMTP::TLS 0.12
+    requirements:
+      Digest::HMAC_MD5 0
+      ExtUtils::MakeMaker 0
+      IO::Socket::INET 0
+      IO::Socket::SSL 0
+      MIME::Base64 0
+      Net::SSLeay 0
+      Test::More 0
   Net-SSLeay-1.94
     pathname: C/CH/CHRISN/Net-SSLeay-1.94.tar.gz
     provides:
@@ -3230,6 +3429,16 @@ DISTRIBUTIONS
       XML::Parser 2.23
       constant 0
       perl 5.006000
+  SOAP-Transport-HTTP-Plack-0.03
+    pathname: H/HE/HELENA/SOAP-Transport-HTTP-Plack-0.03.tar.gz
+    provides:
+      SOAP::Transport::HTTP::Plack 0.03
+      XMLRPC::Transport::HTTP::Plack 0.03
+    requirements:
+      ExtUtils::MakeMaker 0
+      SOAP::Transport::HTTP 0
+      Test::More 0
+      XMLRPC::Transport::HTTP 0
   Safe-Isa-1.000010
     pathname: E/ET/ETHER/Safe-Isa-1.000010.tar.gz
     provides:
@@ -3782,6 +3991,13 @@ DISTRIBUTIONS
       perl 5.008
       strict 0
       warnings 0
+  Text-Unidecode-1.30
+    pathname: S/SB/SBURKE/Text-Unidecode-1.30.tar.gz
+    provides:
+      Text::Unidecode 1.30
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008
   Time-Crontab-0.04
     pathname: K/KA/KAZEBURO/Time-Crontab-0.04.tar.gz
     provides:
@@ -4035,6 +4251,37 @@ DISTRIBUTIONS
       Fcntl 0
       URI 1.10
       perl 5.008001
+  XML-Atom-0.43
+    pathname: M/MI/MIYAGAWA/XML-Atom-0.43.tar.gz
+    provides:
+      LWP::UserAgent::AtomClient undef
+      XML::Atom 0.43
+      XML::Atom::Base undef
+      XML::Atom::Category undef
+      XML::Atom::Client undef
+      XML::Atom::Content undef
+      XML::Atom::Entry undef
+      XML::Atom::ErrorHandler undef
+      XML::Atom::Feed undef
+      XML::Atom::Link undef
+      XML::Atom::Namespace 0.43
+      XML::Atom::Person undef
+      XML::Atom::Server undef
+      XML::Atom::Thing undef
+      XML::Atom::Util undef
+    requirements:
+      Class::Data::Inheritable 0
+      DateTime 0
+      DateTime::TimeZone 0
+      Digest::SHA 0
+      ExtUtils::MakeMaker 6.59
+      LWP::UserAgent 0
+      MIME::Base64 0
+      Module::Build::Tiny 0.034
+      URI 0
+      XML::LibXML 2.0202
+      XML::XPath 1.20
+      perl 5.008001
   XML-LibXML-2.0210
     pathname: S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz
     provides:
@@ -4173,6 +4420,67 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       XML::SAX 0.96
+  XML-XPath-1.48
+    pathname: M/MA/MANWAR/XML-XPath-1.48.tar.gz
+    provides:
+      XML::XPath 1.48
+      XML::XPath::Boolean 1.48
+      XML::XPath::Builder 1.48
+      XML::XPath::Expr 1.48
+      XML::XPath::Function 1.48
+      XML::XPath::Literal 1.48
+      XML::XPath::LocationPath 1.48
+      XML::XPath::Node 1.48
+      XML::XPath::Node::Attribute 1.48
+      XML::XPath::Node::AttributeImpl 1.48
+      XML::XPath::Node::Comment 1.48
+      XML::XPath::Node::Element 1.48
+      XML::XPath::Node::Namespace 1.48
+      XML::XPath::Node::PI 1.48
+      XML::XPath::Node::Text 1.48
+      XML::XPath::NodeSet 1.48
+      XML::XPath::Number 1.48
+      XML::XPath::Parser 1.48
+      XML::XPath::PerlSAX 1.48
+      XML::XPath::Root 1.48
+      XML::XPath::Step 1.48
+      XML::XPath::Variable 1.48
+      XML::XPath::XMLParser 1.48
+    requirements:
+      ExtUtils::MakeMaker 0
+      Path::Tiny 0.076
+      Scalar::Util 1.45
+      Test::More 0
+      XML::Parser 2.23
+      perl 5.010001
+  XMLRPC-Lite-0.717
+    pathname: P/PH/PHRED/XMLRPC-Lite-0.717.tar.gz
+    provides:
+      Apache::XMLRPC::Lite 0.717
+      My::PingPong 0.717
+      XMLRPC 0.717
+      XMLRPC::Constants 0.717
+      XMLRPC::Data 0.717
+      XMLRPC::Deserializer 0.717
+      XMLRPC::Lite 0.717
+      XMLRPC::SOM 0.717
+      XMLRPC::Serializer 0.717
+      XMLRPC::Server 0.717
+      XMLRPC::Server::Parameters 0.717
+      XMLRPC::Test 0.717
+      XMLRPC::Test::Server 0.717
+      XMLRPC::Transport::HTTP 0.717
+      XMLRPC::Transport::HTTP::Apache 0.717
+      XMLRPC::Transport::HTTP::CGI 0.717
+      XMLRPC::Transport::HTTP::Daemon 0.717
+      XMLRPC::Transport::POP3 0.717
+      XMLRPC::Transport::POP3::Server 0.717
+      XMLRPC::Transport::TCP 0.717
+      XMLRPC::Transport::TCP::Server 0.717
+    requirements:
+      ExtUtils::MakeMaker 0
+      SOAP::Lite 0.716
+      SOAP::Transport::TCP 0.715
   XString-0.005
     pathname: A/AT/ATOOMIC/XString-0.005.tar.gz
     provides:

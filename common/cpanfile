@@ -1,55 +1,82 @@
-# requires
-requires 'CGI';
-requires 'CGI::Cookie';
-requires 'Image::Size';
-requires 'File::Spec', '0.8';
-requires 'LWP::UserAgent';
-requires 'Scalar::Util';
-requires 'HTML::Entities', '3.69';
-requires 'parent';
+## Requires
 
-# requires for database
+# Installed in extlib directory
+# requires 'CGI';
+# requires 'Image::Size';
+# requires 'CGI::Cookie';
+# requires 'LWP::UserAgent';
+
+requires 'File::Spec', '0.8';
+
+## Requires for database
+
 requires 'DBI', '1.21';
 requires 'DBD::mysql', '== 4.052'; # Last version to support MySQL 5.x
 
-# recommends
+## Recommends
+
 requires 'Digest::SHA';
 requires 'Plack';
 requires 'CGI::PSGI';
 requires 'CGI::Parse::PSGI';
+requires 'XMLRPC::Transport::HTTP::Plack';
+requires 'HTML::Entities', '3.69';
+requires 'HTML::Parser';
+requires 'SOAP::Lite', '0.5';
 requires 'File::Temp';
+requires 'Scalar::Util';
 requires 'List::Util';
+
+# Image driver
 requires 'Imager';
+
+requires 'IPC::Run';
 requires 'Crypt::DSA';
+requires 'Email::MIME';
+requires 'XML::Atom';
 requires 'Archive::Tar';
 requires 'IO::Compress::Gzip';
 requires 'IO::Uncompress::Gunzip';
-requires 'SOAP::Lite', '0.5';
-requires 'Archive::Zip';
+requires 'Archive::Zip', '!= 1.66, != 1.67, != 1.68';
 requires 'XML::SAX';
+requires 'Digest::SHA1';
 requires 'Net::SMTP';
+requires 'Authen::SASL';
+requires 'Net::SMTP::SSL';
+requires 'Net::SMTP::TLS';
 requires 'IO::Socket::SSL';
 requires 'Net::SSLeay';
 requires 'Safe';
 requires 'Digest::MD5';
 requires 'Text::Balanced';
 requires 'XML::Parser';
+requires 'Time::HiRes';
+requires 'Mozilla::CA';
 requires 'XML::SAX::ExpatXS';
 requires 'XML::SAX::Expat';
 requires 'XML::LibXML::SAX';
-requires 'Mozilla::CA';
-requires 'Time::HiRes';
-requires 'YAML::Syck';
-requires 'CGI::Compile';
 
-# process management
+requires 'CGI::Compile';
+requires 'YAML::Syck';
+requires 'YAML::XS';
+
+## Cloud.pack
+
+requires 'Net::CIDR';
+requires 'Net::IP';
+
+## Process management
+
 requires 'Proclet';
 
-# other
-requires 'Starman';
-requires 'JSON::XS';
-requires 'Hash::Merge';
+## Other
+
 requires 'DateTime';
+requires 'Hash::Merge';
+requires 'JSON::XS';
+requires 'Starman';
+
+## Development
 
 on 'test' => sub {
     requires 'Module::Pluggable', '>= 5.2';
