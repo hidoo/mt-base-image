@@ -10,7 +10,7 @@ Perl 5.16.3 と 5.32.1 の2バージョンに対応し、Starman で起動、Pro
 ## 技術スタック
 
 - **言語**: Perl 5.16.3 / 5.32.1 (perlbrew でソースからコンパイル)
-- **ベースイメージ**: debian:bullseye-slim
+- **ベースイメージ**: debian:trixie-slim
 - **アプリケーションサーバー**: Starman (PSGI)
 - **プロセス管理**: Proclet (Perl 製 foreman 互換)
 - **コンテナ**: Docker (マルチアーキテクチャ: linux/amd64, linux/arm64)
@@ -47,7 +47,7 @@ project-root/
 ### イメージサイズ最適化戦略
 
 1. **マルチステージビルド**: ビルド用 (builder) と実行用 (runtime) のステージを分離
-2. **ベースイメージ**: debian:bullseye-slim + perlbrew (perl:X.XX-slim は 5.16 が EOL で存在しないため)
+2. **ベースイメージ**: debian:trixie-slim + perlbrew (perl:X.XX-slim は 5.16 が EOL で存在しないため)
 3. **不要ファイル削除**: apt キャッシュ、テストファイルなどを削除
 4. **レイヤー最適化**: RUN コマンドを統合
 

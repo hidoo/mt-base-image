@@ -1,7 +1,7 @@
 # =============================================================================
 # Stage 1: Build - Compile Perl and install CPAN modules
 # =============================================================================
-FROM debian:bullseye-slim AS builder
+FROM debian:trixie-slim AS builder
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -42,10 +42,12 @@ RUN curl -L https://install.perlbrew.pl | bash
 ENV PATH="${PERLBREW_ROOT}/bin:${PATH}"
 
 # Compile Perl (--notest required for older Perl on modern systems)
+# -Accflags: append flag to allow old XS modules to compile with GCC 14 on trixie
 RUN perlbrew install "perl-${PERL_VERSION}" \
     --as "perl-${PERL_VERSION}" \
     -Dusethreads \
     -Duseshrplib \
+    -Accflags=-Wno-implicit-function-declaration \
     -j"$(nproc)" \
     --notest
 
@@ -70,7 +72,7 @@ RUN cpm install --global --show-build-log-on-failure \
 # =============================================================================
 # Stage 2: Runtime - Minimal image with compiled Perl
 # =============================================================================
-FROM debian:bullseye-slim
+FROM debian:trixie-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -83,12 +85,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpng16-16 \
     libgif7 \
     libfreetype6 \
-    libtiff5 \
+    libtiff6 \
     # XML modules runtime
     libexpat1 \
     libxml2 \
     # SSL runtime
-    libssl1.1 \
+    libssl3 \
     # GMP runtime
     libgmp10 \
     # YAML::Syck runtime
