@@ -97,6 +97,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libyaml-0-2 \
     # Development utilities
     procps \
+    curl \
+    ca-certificates \
+    zip \
+    unzip \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy compiled Perl from builder
