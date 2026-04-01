@@ -2105,6 +2105,62 @@ DISTRIBUTIONS
       Module::Build 0.38
       Scalar::Util 0
       Term::ANSIColor 0
+  MCE-1.902
+    pathname: M/MA/MARIOROY/MCE-1.902.tar.gz
+    provides:
+      MCE 1.902
+      MCE::Candy 1.902
+      MCE::Channel 1.902
+      MCE::Channel::Mutex 1.902
+      MCE::Channel::MutexFast 1.902
+      MCE::Channel::Simple 1.902
+      MCE::Channel::SimpleFast 1.902
+      MCE::Channel::Threads 1.902
+      MCE::Channel::ThreadsFast 1.902
+      MCE::Child 1.902
+      MCE::Core 1.902
+      MCE::Core::Input::Generator 1.902
+      MCE::Core::Input::Handle 1.902
+      MCE::Core::Input::Iterator 1.902
+      MCE::Core::Input::Request 1.902
+      MCE::Core::Input::Sequence 1.902
+      MCE::Core::Manager 1.902
+      MCE::Core::Validation 1.902
+      MCE::Core::Worker 1.902
+      MCE::Flow 1.902
+      MCE::Grep 1.902
+      MCE::Loop 1.902
+      MCE::Map 1.902
+      MCE::Mutex 1.902
+      MCE::Mutex::Channel 1.902
+      MCE::Mutex::Channel2 1.902
+      MCE::Mutex::Flock 1.902
+      MCE::Queue 1.902
+      MCE::Relay 1.902
+      MCE::Signal 1.902
+      MCE::Step 1.902
+      MCE::Stream 1.902
+      MCE::Subs 1.902
+      MCE::Util 1.902
+    requirements:
+      Carp 0
+      Errno 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      File::Path 0
+      Getopt::Long 0
+      IO::Handle 0
+      Scalar::Util 0
+      Socket 0
+      Storable 2.04
+      Time::HiRes 0
+      base 0
+      bytes 0
+      constant 0
+      open 0
+      perl 5.008001
+      strict 0
+      warnings 0
   MIME-Base32-1.303
     pathname: R/RE/REHSACK/MIME-Base32-1.303.tar.gz
     provides:
@@ -3439,6 +3495,15 @@ DISTRIBUTIONS
       SOAP::Transport::HTTP 0
       Test::More 0
       XMLRPC::Transport::HTTP 0
+  SUPER-1.20190531
+    pathname: C/CH/CHROMATIC/SUPER-1.20190531.tar.gz
+    provides:
+      SUPER 1.20190531
+    requirements:
+      Scalar::Util 1.20
+      Sub::Identify 0.03
+      Test::Simple 0.61
+      perl v5.6.2
   Safe-Isa-1.000010
     pathname: E/ET/ETHER/Safe-Isa-1.000010.tar.gz
     provides:
@@ -3695,6 +3760,13 @@ DISTRIBUTIONS
       Role::Tiny 0
       Type::Tiny 1.004
       perl 5.008001
+  Sub-Identify-0.14
+    pathname: R/RG/RGARCIA/Sub-Identify-0.14.tar.gz
+    provides:
+      Sub::Identify 0.14
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
   Sub-Install-0.929
     pathname: R/RJ/RJBS/Sub-Install-0.929.tar.gz
     provides:
@@ -3864,6 +3936,33 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::Builder 0.12
       Test::Builder::Tester 1.04
+  Test-MockModule-v0.180.0
+    pathname: G/GF/GFRANKS/Test-MockModule-v0.180.0.tar.gz
+    provides:
+      Test::MockModule v0.180.0
+    requirements:
+      Carp 0
+      Module::Build 0.4234
+      SUPER 1.20
+      Scalar::Util 0
+      perl 5.006
+  Test-MockObject-1.20200122
+    pathname: C/CH/CHROMATIC/Test-MockObject-1.20200122.tar.gz
+    provides:
+      Test::MockObject 1.20200122
+      Test::MockObject::Extends 1.20200122
+    requirements:
+      Carp 0
+      Devel::Peek 0
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
+      Test::Builder 0
+      UNIVERSAL::can 1.20110617
+      UNIVERSAL::isa 1.20110614
+      constant 0
+      perl 5.008
+      strict 0
+      warnings 0
   Test-Output-1.036
     pathname: B/BR/BRIANDFOY/Test-Output-1.036.tar.gz
     provides:
@@ -3874,6 +3973,43 @@ DISTRIBUTIONS
       File::Spec::Functions 0
       File::Temp 0.17
       perl 5.008
+  Test-Perl-Critic-1.04
+    pathname: P/PE/PETDANCE/Test-Perl-Critic-1.04.tar.gz
+    provides:
+      Test::Perl::Critic 1.04
+    requirements:
+      Carp 0
+      English 0
+      MCE 1.827
+      Module::Build 0.4
+      Perl::Critic 1.105
+      Perl::Critic::Utils 1.105
+      Perl::Critic::Violation 1.105
+      Test::Builder 0.88
+      Test::More 0
+      strict 0
+      warnings 0
+  Test-PerlTidy-20260110
+    pathname: S/SH/SHLOMIF/Test-PerlTidy-20260110.tar.gz
+    provides:
+      Test::PerlTidy 20260110
+    requirements:
+      Carp 0
+      English 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      IO::File 0
+      Module::Build 0.28
+      Path::Tiny 0.100
+      Perl::Tidy 20220613
+      Test::Builder 0
+      Text::Diff 0
+      parent 0
+      perl 5.014
+      strict 0
+      vars 0
+      warnings 0
   Test-Requires-0.11
     pathname: T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
     provides:
@@ -4132,6 +4268,28 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       common::sense 0
+  UNIVERSAL-can-1.20140328
+    pathname: C/CH/CHROMATIC/UNIVERSAL-can-1.20140328.tar.gz
+    provides:
+      UNIVERSAL::can 1.20140328
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      Scalar::Util 0
+      strict 0
+      vars 0
+      warnings 0
+      warnings::register 0
+  UNIVERSAL-isa-1.20171012
+    pathname: E/ET/ETHER/UNIVERSAL-isa-1.20171012.tar.gz
+    provides:
+      UNIVERSAL::isa 1.20171012
+    requirements:
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
+      perl 5.006002
+      strict 0
+      warnings 0
+      warnings::register 0
   URI-5.34
     pathname: O/OA/OALDERS/URI-5.34.tar.gz
     provides:

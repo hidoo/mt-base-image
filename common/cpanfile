@@ -82,6 +82,10 @@ on 'test' => sub {
     requires 'Module::Pluggable', '>= 5.2';
     requires 'Perl::Critic';
     requires 'Perl::Tidy';
+    requires 'Test::MockModule';
+    requires 'Test::MockObject';
+    requires 'Test::Perl::Critic';
+    requires 'Test::PerlTidy';
 
     # perlimports
     requires 'Getopt::Long', '>= 2.55' if $] >= 5.018;
