@@ -19,13 +19,6 @@ docker pull ghcr.io/hidoo/mt-base-image:perl-5.32-latest
 ```Dockerfile
 FROM ghcr.io/hidoo/mt-base-image:perl-5.32-latest
 
-# Set up requires packages
-RUN apt-get update -y && apt-get install -y --no-install-recommends \
-    zip \
-    unzip \
-    && apt-get autoclean -y \
-    && rm -r /var/lib/apt/lists/*
-
 # Install movabletype
 ARG MOVABLETYPE_VERSION
 COPY ./files/${MOVABLETYPE_VERSION}.zip /tmp/
@@ -46,7 +39,7 @@ RUN unzip -d /tmp /tmp/${MOVABLETYPE_VERSION}.zip \
 ## 技術スタック
 
 + **Perl**: 5.16.3 / 5.32.1 (perlbrew でソースからコンパイル)
-+ **ベースイメージ**: debian:bullseye+slim
++ **ベースイメージ**: debian:trixie-slim
 + **アプリケーションサーバー**: Starman (workers: 5, port: 5000)
 + **プロセス管理**: Proclet (Perl 製 foreman 互換)
 + **依存管理**: cpanfile
